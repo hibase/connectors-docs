@@ -1,0 +1,1 @@
+This is the hibase documentation for integrating with the Google Analytics Reporting API (v4).
