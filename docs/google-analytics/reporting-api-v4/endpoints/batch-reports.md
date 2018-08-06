@@ -81,9 +81,9 @@ The response from the API for the query above will look something like this:
               "metrics": [
                 {
                   "values": [
-                    "123",
-                    "1234",
-                    "12345"
+                    "42",
+                    "56",
+                    "322"
                   ]
                 }
               ]
@@ -97,9 +97,9 @@ The response from the API for the query above will look something like this:
               "metrics": [
                 {
                   "values": [
-                    "123",
-                    "1234",
-                    "12345"
+                    "44",
+                    "62",
+                    "398"
                   ]
                 }
               ]
@@ -147,25 +147,36 @@ hibase will parse it and serve it as follows:
         "20180727",
         "Berlin",
         "Chrome",
-        "2",
-        "4",
-        "49"
+        "42",
+        "56",
+        "322"
       ],
       [
-        "20180730",
+        "20180728",
         "Berlin",
         "Chrome",
-        "2",
-        "10",
-        "108"
-      ]
+        "44",
+        "62",
+        "398"
+      ],
+      // ...
     ]
   }
 ```
 
 As you can see, a few things are happening here:
 
-- Colons within header names are being changed to underscores, in order to be valid as column names for a possible SQL insert
-- Header data types are being inferred from the response
-- Data from different paths within the JSON is being aggregated into one-dimensional rows
+- Colons within header names are being changed to underscores, in order to be valid as column names for a possible SQL insert: e.g. `ga:users` becomes `ga_users`
+- Header *data types* are being inferred from the response
+- Data from different paths within the JSON is being aggregated into one-dimensional rows: 
+  ```json
+    [
+      "20180727",
+      "Berlin",
+      "Chrome",
+      "42",
+      "56",
+      "322"
+    ]
+  ```
 
