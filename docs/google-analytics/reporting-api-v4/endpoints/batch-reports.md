@@ -10,7 +10,10 @@ A valid query might look something like this:
   {
     "viewId":"XXXXXXXXX",
     "dateRanges":[
-      {"startDate":"2018-07-30","endDate":"2018-07-31"}
+      {
+        "startDate":"2018-07-30",
+        "endDate":"2018-07-31"
+      }
     ],
     "metrics":[
       {"expression":"ga:users"},
@@ -31,7 +34,10 @@ You can interpolate variables into your Query through the hibase syntax, for exa
   {
     // ...
     "dateRanges":[
-      {"startDate":"{{ $today - 7 }}","endDate":"{{ $today - 7 }}"}
+      {
+        "startDate":"{{ $today - 7 }}",
+        "endDate":"{{ $today }}"
+      }
     ],
     // ...
   }
@@ -169,14 +175,14 @@ As you can see, a few things are happening here:
 - Colons within header names are being changed to underscores, in order to be valid as column names for a possible SQL insert: e.g. `ga:users` becomes `ga_users`
 - Header *data types* are being inferred from the response
 - Data from different paths within the JSON is being aggregated into one-dimensional rows: 
-  ```json
-    [
-      "20180727",
-      "Berlin",
-      "Chrome",
-      "42",
-      "56",
-      "322"
-    ]
-  ```
+```json
+  [
+    "20180727",
+    "Berlin",
+    "Chrome",
+    "42",
+    "56",
+    "322"
+  ]
+```
 
