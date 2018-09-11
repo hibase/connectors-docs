@@ -45,9 +45,9 @@ You can interpolate variables into your Query through the hibase syntax, for exa
 
 ### Response normalization
 
-hibase takes care of normalizing the data coming back from the GA API, in order to represent it in a two-dimensional, tabular format.
+hibase takes care of normalizing the data coming back from the Google Analytics Reporting API, in order to represent it in a two-dimensional, tabular format.
 
-The response from the API for the query above will look something like this:
+Provided this response originating from the API call...
 
 ```json
   {
@@ -118,7 +118,7 @@ The response from the API for the query above will look something like this:
   }
 ```
 
-hibase will parse it and serve it as follows:
+... hibase will parse it and serve it as follows:
 
 ```json
   {
@@ -186,3 +186,13 @@ As you can see, a few things are happening here:
   ]
 ```
 
+
+### Pagination
+
+The Google Analytics Reporting API is paginated through the `pageToken` and `pageSize` parameters, as outlined in the [official docs](https://developers.google.com/analytics/devguides/reporting/core/v4/rest/v4/reports/batchGet). 
+
+hibase takes care of automatically iterating requests if a `nextPageToken` is received from the API. If given no other instruction, it will do so until an empty data set is returned or the `nextPageToken` parameter is not returned anymore. 
+
+> **NB**: Limits apply to how many subsequent calls can be made through automatic pagination. Please get in touch in case you are reaching your limits and you would like them to be increased. 
+
+You can still take back control of the API call and retrieve a specific set of records by manually providing a `pageToken` parameter in your `query`. In this case, hibase will not iterate any further regardless of what `nextPageToken` is returned by the API.
