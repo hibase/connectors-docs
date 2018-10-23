@@ -36,6 +36,11 @@ items:
         title: Merchant API (v1)
       - path: reporting-api-v1
         title: Reporting API (v1)
+  - path: viglink
+    title: VigLink
+    items:
+      - path: reporting-api-v1
+        title: Reporting API (v1)
 ---
 
 ### Welcome to the hibase connectors docs
