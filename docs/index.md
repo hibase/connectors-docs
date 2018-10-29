@@ -7,6 +7,11 @@ items:
     items:
       - path: publisher-api-v4
         title: Publisher API (v4)
+  - path: commission-junction
+    title: Commission Junction
+    items:
+      - path: apis
+        title: Commission Junction APIs
   - path: google-analytics
     title: Google Analytics
     items:
@@ -41,6 +46,11 @@ items:
     items:
       - path: reporting-api-v1
         title: Reporting API (v1)
+  - path: webgains
+    title: Webgains
+    items:
+      - path: soap-api
+        title: Webgains SOAP API
 ---
 
 ### Welcome to the hibase connectors docs
