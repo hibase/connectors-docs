@@ -29,6 +29,11 @@ items:
         title: Payment API (v1)
       - path: reporting-api-v1
         title: Reporting API (v1)
+  path: performance-horizon
+    title: Performance Horizon
+    items:
+      - path: api-v1
+        title: Performance Horizon API (v1)
   - path: shareasale
     title: ShareASale
     items:
@@ -37,7 +42,7 @@ items:
   - path: skimlinks
     title: Skimlinks
     items:
-      - path: merchang-api-v1
+      - path: merchant-api-v1
         title: Merchant API (v1)
       - path: reporting-api-v1
         title: Reporting API (v1)
