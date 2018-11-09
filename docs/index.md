@@ -29,7 +29,7 @@ items:
         title: Payment API (v1)
       - path: reporting-api-v1
         title: Reporting API (v1)
-  path: performance-horizon
+  - path: performance-horizon
     title: Performance Horizon
     items:
       - path: api-v1
