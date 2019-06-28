@@ -1,0 +1,5 @@
+## Insights
+
+The *Insights* endpoint of the _Facebook Ads Insights API_ allows you to fetch insights regarding different entities within your Facebook account (Account, Campaigns, Adsets, Ads).
+
+For every level of reporting, you will have to provide an Object ID in order for the connector to fetch the related insights. For example, you can get your Account ID from your [Ads Manager console](https://business.facebook.com/ads/manager/account_settings/information) under _Account Settings_.
