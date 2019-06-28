@@ -12,6 +12,15 @@ items:
     items:
       - path: apis
         title: Commission Junction APIs
+  - path: facebook
+    title: Facebook
+    items:
+      - path: facebook-ads-insights-api-v3-3
+        title: Facebook Ads Insights API (v3.3)
+        items:
+          - path: endpoints
+            items:
+              - insights.md
   - path: google-analytics
     title: Google Analytics
     items:
@@ -22,6 +31,11 @@ items:
           - path: endpoints
             items:
               - batch-reports.md
+  - path: impact-radius
+    title: Impact Radius
+    items:
+      - path: media-partners-api-v8
+        title: Media Partners API (v8)
   - path: linkshare
     title: Linkshare
     items:
