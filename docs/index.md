@@ -2,6 +2,11 @@
 table_of_contents:
   page: false
 items:
+  - path: airtable
+    title: Airtable
+    items:
+      - path: api-v0
+        title: Airtable API (v0)
   - path: awin
     title: Awin
     items:
@@ -21,6 +26,11 @@ items:
           - path: endpoints
             items:
               - insights.md
+  - path: google-adwords
+    title: Google Adwords
+    items:
+      - path: adwords-reports-api-v201809
+        title: Reports API (v201809)
   - path: google-analytics
     title: Google Analytics
     items:
