@@ -1,4 +1,4 @@
-# Facebook Ads Insights API (v3.2)
+# Facebook Ads Insights API (v4.0)
 
 ### Getting started
 
@@ -12,7 +12,7 @@ In order to start using the hibase connector to the Facebook Ads API, go through
 
 4. Go back to the App page in your [Business Settings page](https://business.facebook.com/settings/apps), select the App and select the _People_ tab on the right hand side of the screen
 
-5. Click on _Add People_ and add the newly created System User as a developer to the App
+5. Click on _Add People_ and add the newly created System User as a _developer_ to the App
 
 6. Back in the System Users section of your [Business Settings page](https://business.facebook.com/settings/system-users), select the System User you created and navigate to the _Assets_ tab
 
@@ -30,4 +30,4 @@ In order to start using the hibase connector to the Facebook Ads API, go through
 
 13. Copy the Access Token and store it safely (e.g. in a Password Manager)
 
-14. Copy-paste the token in _hibase_ when adding the Facebook 
+14. Copy-paste the token in _hibase_ when adding the Facebook Ads Insights API connector
