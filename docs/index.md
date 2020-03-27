@@ -80,6 +80,11 @@ items:
     items:
       - path: soap-api
         title: Webgains SOAP API
+  - path: zoho-crm
+    title: Zoho CRM
+    items:
+      - path: rest-api
+        title: Zoho CRM Rest API (v2)
 ---
 
 ### Welcome to the hibase connectors docs
