@@ -15,10 +15,10 @@ Follow the steps below in order to start using the hibase connector to the Zoho 
   - For IN: https://accounts.zoho.in
   - For CN: https://accounts.zoho.com.cn
 
-4. Navigate to the *Generate Code* tab and paste the following line in *Scope* for complete access (you can adapt scopes according to what you would like hibase to have access to): 
+4. Navigate to the *Generate Code* tab and paste the following line in *Scope* for complete read access (you can adapt scopes according to what you would like hibase to have access to): 
 
 ```
-ZohoBooks.fullaccess.all,ZohoCRM.modules.custom.all,ZohoCRM.modules.contacts.all,ZohoCRM.modules.ALL,ZohoCRM.settings.ALL,ZohoCRM.users.ALL,ZohoCRM.org.ALL,ZohoCRM.settings.functions.all,ZohoCRM.functions.execute.read,ZohoCRM.functions.execute.create,ZohoCRM.settings.layout_rules.read,ZohoCRM.notifications.all,aaaserver.profile.all
+ZohoBooks.fullaccess.read,ZohoCRM.modules.custom.read,ZohoCRM.modules.contacts.read,ZohoCRM.modules.read,ZohoCRM.settings.read,ZohoCRM.users.read,ZohoCRM.org.read
 ```
 
 5. Give a description to the Scope (e.g. "hibase full access") and hit *Generate*
@@ -35,7 +35,7 @@ curl -v -X POST \
   --data-urlencode "client_secret=[Client Secret]" \
   --data-urlencode "grant_type=authorization_code" \
   --data-urlencode "access_type=offline" \
-  [Zoho API Domain]/oauth/v2/token
+  [Zoho API Domain as in step 3]/oauth/v2/token
 ```
 
 8. Copy the *Refresh token* that is provided by the HTTP response
