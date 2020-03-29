@@ -18,7 +18,7 @@ Follow the steps below in order to start using the hibase connector to the Zoho 
 4. Navigate to the *Generate Code* tab and paste the following line in *Scope* for complete read access (you can adapt scopes according to what you would like hibase to have access to): 
 
 ```
-ZohoBooks.fullaccess.read,ZohoCRM.modules.custom.read,ZohoCRM.modules.contacts.read,ZohoCRM.modules.read,ZohoCRM.settings.read,ZohoCRM.users.read,ZohoCRM.org.read
+ZohoBooks.fullaccess.read,ZohoCRM.modules.custom.read,ZohoCRM.modules.contacts.read,ZohoCRM.modules.read,ZohoCRM.settings.read,ZohoCRM.users.read,ZohoCRM.org.read,ZohoCRM.coql.read
 ```
 
 5. Give a description to the Scope (e.g. "hibase full access") and hit *Generate*
