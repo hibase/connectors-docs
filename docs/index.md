@@ -20,8 +20,8 @@ items:
   - path: facebook
     title: Facebook
     items:
-      - path: facebook-ads-insights-api-v3-3
-        title: Facebook Ads Insights API (v3.3)
+      - path: facebook-ads-insights-api
+        title: Facebook Ads Insights API
         items:
           - path: endpoints
             items:
