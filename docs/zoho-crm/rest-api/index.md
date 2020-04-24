@@ -1,4 +1,4 @@
-# Zoho CRM Rest API (v2)
+# Zoho CRM REST API (v2)
 
 ### Getting started
 

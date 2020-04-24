@@ -63,6 +63,11 @@ items:
     items:
       - path: reporting-api-v2-3
         title: Reporting API (v2.3)
+  - path: shopify
+    title: Shopify
+    items:
+      - path: rest-api
+        title: REST API
   - path: skimlinks
     title: Skimlinks
     items:
