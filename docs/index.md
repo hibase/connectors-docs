@@ -7,6 +7,11 @@ items:
     items:
       - path: api-v0
         title: Airtable API (v0)
+  - path: amplitude
+    title: Amplitude
+    items:
+      - path: api-v2
+        title: Amplitude API (v2)
   - path: awin
     title: Awin
     items:
@@ -41,6 +46,11 @@ items:
           - path: endpoints
             items:
               - batch-reports.md
+  - path: hubspot
+    title: HubSpot
+    items:
+      - path: crm-api-v2
+        title: CRM API (v3)
   - path: impact-radius
     title: Impact Radius
     items:
@@ -58,11 +68,16 @@ items:
     items:
       - path: graph-api-v1
         title: Microsoft Graph API (v1)
-  - path: performance-horizon
-    title: Performance Horizon
+  - path: microsoft-sharepoint
+    title: Microsoft Sharepoint
+    items:
+      - path: rest-api-v1
+        title: Microsoft Sharepoint API (v1)
+  - path: scrapinghub
+    title: Scrapinghub
     items:
       - path: api-v1
-        title: Performance Horizon API (v1)
+        title: Scrapy Cloud API (v1)
   - path: shareasale
     title: ShareASale
     items:
