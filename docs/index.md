@@ -53,6 +53,11 @@ items:
         title: Payment API (v1)
       - path: reporting-api-v1
         title: Reporting API (v1)
+  - path: microsoft
+    title: Microsoft
+    items:
+      - path: graph-api-v1
+        title: Microsoft Graph API (v1)
   - path: performance-horizon
     title: Performance Horizon
     items:

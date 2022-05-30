@@ -1,0 +1,46 @@
+# Microsoft Bing Ads Reporting API v13
+
+### Getting started
+
+Follow these steps in order to start using the hibase connector to the [Microsoft Bing Ads API](https://docs.microsoft.com/en-us/advertising/guides/get-started):
+
+1. Log into your Microsoft Advertising account as *Super Admin* and navigate to the [Developers Portal](https://developers.ads.microsoft.com/Account)
+
+2. Select which user you want to use in order to log in from hibase and hit *Request Token* in order to get your *Developer Token*
+
+3. Register a new app in your [Azure account](https://go.microsoft.com/fwlink/?linkid=2083908) with the following settings:
+
+  - **Name**: *hibase Bing Ads Reporting API*
+  - **Supported account types**: *Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)*
+  - **Redirect URI**: `https://localhost`
+
+4. Take note of the *Client ID* that is displayed at the top of your new App's page
+
+5. Navigate to the *Certificates & secrets* page of your App and click on *New client secret* to issue a new secret. Take note of it as it will be required later in the process
+
+6. In your browser, navigate to the following URL after replacing *Client ID* with the values you noted above:
+
+```
+https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[Client ID]&scope=openid%20profile%20https://ads.microsoft.com/ads.manage%20offline_access&response_type=code&redirect_uri=https://localhost&prompt=login
+```
+
+7. After granting access to the application, you will be redirected to your `localhost`, most likely resulting in a "This site can't be reached" page in your browser. Copy the URL from the URL bar and take note of the value of the `code` param therein included. This is the *Authorization Code* you will need in the following step
+
+8. Issue a POST request as follows, replacing all the values in brackets with the ones you noted above (the example is using curl):
+
+```
+curl -v -X POST \
+  --data-urlencode "grant_type=authorization_code" \
+  --data-urlencode "client_id=[Client ID]" \
+  --data-urlencode "code=[Authorization Code]" \
+  --data-urlencode "scope=offline_access https://ads.microsoft.com/ads.manage openid profile" \
+  --data-urlencode "redirect_uri=https://localhost" \
+  --data-urlencode "client_secret=[Client Secret]" \
+  https://login.microsoftonline.com/common/oauth2/v2.0/token
+```
+
+9. Take note of the *Refresh token* provided in the response
+
+10. Provide your *Client ID*, *Client Secret*, *Developer Token* and *Refresh Token* to the hibase connector for Microsoft Graph when adding it to your account. Additionally. write `https://localhost` as *Redirect Uri*
+
+You are now ready to start using the *Microsoft Bing Ads Reporting API* connector for *hibase*
