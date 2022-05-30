@@ -49,7 +49,7 @@ items:
   - path: hubspot
     title: HubSpot
     items:
-      - path: crm-api-v2
+      - path: crm-api-v3
         title: CRM API (v3)
   - path: impact-radius
     title: Impact Radius
@@ -66,13 +66,12 @@ items:
   - path: microsoft
     title: Microsoft
     items:
+      - path: bingads-reporting-api-v13
+        title: Bing Ads Reporting API (v13)
       - path: graph-api-v1
-        title: Microsoft Graph API (v1)
-  - path: microsoft-sharepoint
-    title: Microsoft Sharepoint
-    items:
-      - path: rest-api-v1
-        title: Microsoft Sharepoint API (v1)
+        title: Graph API (v1)
+      - path: sharepoint-rest-api-v1
+        title: Sharepoint API (v1)
   - path: scrapinghub
     title: Scrapinghub
     items:
