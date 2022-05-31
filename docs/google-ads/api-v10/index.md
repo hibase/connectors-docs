@@ -1,8 +1,8 @@
-# Google AdWords API (v201809)
+# Google Ads API (v10)
 
 ### Getting started
 
-In order to start using the hibase connector to the Google AdWords API (v201809), you need to get a [*Developer Token*](https://developers.google.com/adwords/api/docs/guides/signup) and a [*OAuth2 Refresh Token*](https://developers.google.com/adwords/api/docs/guides/authentication#oauth2_service_accounts) from Google.
+In order to start using the hibase connector to the Google Ads API (v10), you need to get a [*Developer Token*](https://developers.google.com/adwords/api/docs/guides/signup) and a [*OAuth2 Refresh Token*](https://developers.google.com/adwords/api/docs/guides/authentication#oauth2_service_accounts) from Google.
 
 1. Navigate to your [*Google Ads Manager Account API Centre*](https://ads.google.com/aw/apicenter) and first of all copy the *Account ID* you see right of the AdWords logo at the top of the page (e.g. 123-456-7890)
 
@@ -32,4 +32,4 @@ In order to start using the hibase connector to the Google AdWords API (v201809)
 
 14. In your [*credentials page*](https://console.developers.google.com/apis/credentials), you can now remove `https://developers.google.com/oauthplayground` from the Authorized redirect URIs of your OAuth Client ID
 
-15. In *hibase*, provide the *Account ID*, *Developer Token*, *Client ID*, *Client Secret* and *Refresh Token* when adding the *Google Adwords API* connector
+15. In *hibase*, provide the *Account ID*, *Developer Token*, *Client ID*, *Client Secret* and *Refresh Token* when adding the *Google Ads API* connector

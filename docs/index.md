@@ -2,6 +2,11 @@
 table_of_contents:
   page: false
 items:
+  - path: aircall
+    title: Aircall
+    items:
+      - path: api-v1
+        title: Aircall API (v1)
   - path: airtable
     title: Airtable
     items:
@@ -31,11 +36,11 @@ items:
           - path: endpoints
             items:
               - insights.md
-  - path: google-adwords
-    title: Google Adwords
+  - path: google-ads
+    title: Google Ads
     items:
-      - path: adwords-reports-api-v201809
-        title: Reports API (v201809)
+      - path: api-v10
+        title: Google Ads API (v10)
   - path: google-analytics
     title: Google Analytics
     items:
@@ -77,6 +82,11 @@ items:
     items:
       - path: api-v1
         title: Scrapy Cloud API (v1)
+  - path: personio
+    title: Personio
+    items:
+      - path: api-v1
+        title: Personio API (v1)
   - path: shareasale
     title: ShareASale
     items:
@@ -104,11 +114,17 @@ items:
     items:
       - path: soap-api
         title: Webgains SOAP API
+  - path: zabbix
+    title: Zabbix
+    items:
+      - path: api-v1
+        title: Zabbix API (v1)
   - path: zoho-crm
     title: Zoho CRM
     items:
       - path: rest-api
         title: Zoho CRM Rest API (v2)
+  
 ---
 
 ### Welcome to the hibase connectors docs
